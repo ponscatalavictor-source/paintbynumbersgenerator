@@ -130,8 +130,9 @@ function createSVG(facetResult: any, colorsByIndex: any, sizeMultiplier: number,
       let svgStroke = stroke ? '#000' : (fill ? `rgb(${colorsByIndex[f.color][0]},${colorsByIndex[f.color][1]},${colorsByIndex[f.color][2]})` : '');
       let svgFill = fill ? `rgb(${colorsByIndex[f.color][0]},${colorsByIndex[f.color][1]},${colorsByIndex[f.color][2]})` : 'none';
 
-      svgString += `<path data-facetId="${f.id}" d="${data}" style="fill: ${svgFill};${svgStroke ? `stroke: ${svgStroke}; stroke-width:1px` : ''}"></path>`;
-
+      const colorHex = `rgb(${colorsByIndex[f.color][0]},${colorsByIndex[f.color][1]},${colorsByIndex[f.color][2]})`;
+svgString += `<path data-facetId="${f.id}" data-color="${colorHex}" d="${data}" style="fill: white;stroke: #000; stroke-width:1px"></path>`;
+      
       if (addColorLabels) {
         const labelOffsetX = f.labelBounds.minX * sizeMultiplier;
         const labelOffsetY = f.labelBounds.minY * sizeMultiplier;
