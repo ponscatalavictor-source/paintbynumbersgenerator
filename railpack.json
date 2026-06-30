@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schema.railpack.com",
+  "buildAptPackages": [
+    "build-essential",
+    "libcairo2-dev",
+    "libjpeg-dev",
+    "libpango1.0-dev",
+    "libgif-dev",
+    "libpixman-1-dev",
+    "libpng-dev",
+    "pkg-config"
+  ],
+  "deploy": {
+    "aptPackages": [
+      "libcairo2",
+      "libjpeg62-turbo",
+      "libpango-1.0-0",
+      "libpangocairo-1.0-0",
+      "libgif7",
+      "libpixman-1-0",
+      "libpng16-16"
+    ]
+  }
+}
