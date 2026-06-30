@@ -20,5 +20,9 @@
       "libpixman-1-0",
       "libpng16-16"
     ]
+  },
+  "provider": "node",
+  "packages": {
+    "node": "18"
   }
 }
