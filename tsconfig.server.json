@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "lib": ["dom", "es2017"],
+    "outDir": "./build",
+    "rootDir": "./",
+    "strict": false,
+    "noImplicitAny": false,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "allowJs": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "server.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "src-cli",
+    "dist"
+  ]
+}
